@@ -1,0 +1,70 @@
+.footer{
+  padding: 50px 210px;
+  background-color: rgb(118, 118, 118);
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  &-info{
+    p{
+      color: rgb(255, 255, 255);
+    }
+  }
+  &-list{
+    margin: 0;
+    padding: 0;
+  }
+  &-link{
+    list-style: none;
+    a{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      line-height: 1.857;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  &-company{
+    display: flex;
+    img{
+      align-self: start;
+      margin-right: 10px;
+    }
+    &__text{
+      p{
+        color: rgb(255, 255, 255);
+        line-height: 1;
+      }
+      a{
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+@media(max-width:1300px){
+  .footer{
+    padding: 65px 100px;
+  }
+}
+@media(max-width:1000px){
+  .footer{
+    padding: 65px 5px;
+    flex-direction: column;
+    align-items: center;
+    &-info{
+      margin-bottom: 50px;
+    }
+    &-list{
+      margin-bottom: 50px;
+    }
+  }
+}
